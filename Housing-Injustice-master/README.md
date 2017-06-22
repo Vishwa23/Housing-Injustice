@@ -1,0 +1,4 @@
+# Housing-Injustice
+Data Science for Social Good Project
+
+Our work includes building a Visualization tool to study effect of 'Contract for deed' in Westside, Atlanta. 

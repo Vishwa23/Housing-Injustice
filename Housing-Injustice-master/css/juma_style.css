@@ -1,0 +1,104 @@
+/* Bordered form */
+form.login_form {
+    border: 3px solid #f1f1f1;
+    padding: 12px 20px;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid green;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/* Set a style for all buttons */
+button.login_btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button.login_btn:hover {
+    opacity: 0.8;
+}
+
+/* Add padding to containers */
+.forgot_container {
+    padding: 16px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+    float: left;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+/*make footer stick to bottom of page  */
+body.bottom {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+/*make footer stick to bottom of page */
+main.bott_main {
+    flex: 1 0 auto;
+}
+/*display box for property information */
+.map-overlay{
+    position: absolute;
+    top: 150px;
+    /*bottom: 450px;*/
+    right: 9px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.8);
+    /*margin-right: 20px;*/
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    overflow: auto;
+    border-radius: 3px;
+    z-index:2 !important;
+
+}
+/*toggle box*/
+#toggle_box{
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    border-radius: 3px;
+    width: 450px;
+    height: 60px;
+    border: 1px solid rgba(0,0,0,0.4);
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0.8;
+}
+/*Login box position*/
+#login_box{
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    margin-top: -25px;
+    margin-left: -50px;
+
+}​
+
