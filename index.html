@@ -128,16 +128,16 @@
             }
 			else{
 				var resq=new Array();
-				 $.ajax({
+				$.ajax({
                     type: "POST",
                     url: 'mapDoc.php',
                     data: { s : searchkeywords },
+					async: false,
                     success: function(data)
                     {
 							try
 								{
 									resq = JSON.parse(data);
-									alert(resq['ParcelID']);
 								}
 							catch(e)
 								{
@@ -145,14 +145,13 @@
 								}
                     }
                 });
-				
-				/*var result="";
-				if(result!=""){
-					console.log(result);
-					alert(result);
+				if(resq.length!=0){
+					console.log('vishw');
+					var x=resq[4]['X'];
+					var y=resq[4]['Y'];
+					alert(resq[4]['Address'])
+					map.setView([y,x],18);
 				}
-				else{
-				}*/
 			}
         }
 		map.addControl(control);
